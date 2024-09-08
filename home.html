@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hero {
+            background-image: url('your-image-url.jpg');
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#registration">Registration</a>
+        <a href="#about-us">About Us</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Delicious food, cozy atmosphere</p>
+        </div>
+    </div>
+
+    <div class="content" id="home">
+        <h2>Home</h2>
+        <p>Welcome to our restaurant! We offer a variety of delicious dishes made with fresh ingredients. Join us for a memorable dining experience.</p>
+    </div>
+
+    <div class="content" id="registration">
+        <h2>Registration</h2>
+        <p>Register with us to receive special offers and updates.</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <div class="content" id="about-us">
+        <h2>About Us</h2>
+        <p>Our restaurant has been serving delicious meals since 1990. We pride ourselves on our friendly service and cozy atmosphere. Come and visit us to enjoy a wonderful dining experience.</p>
+    </div>
+
+</body>
+</html>
